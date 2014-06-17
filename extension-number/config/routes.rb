@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  get 'members/index'
+
+  get 'members/show'
+
+  get 'members/new'
+
+  get 'members/edit'
+
+  get 'members/create'
+
+  get 'members/update'
+
+  get 'members/destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
