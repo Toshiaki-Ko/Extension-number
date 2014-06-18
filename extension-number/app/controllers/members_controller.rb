@@ -35,7 +35,7 @@ class MembersController < ApplicationController
 
 　#URLから送られてきた値とフォームで入力した値をここに取得
   #def member_params
-  #  params.require(:member).permit(:busho, :name, :yomi, :tel)
+  #  params.require(:member).permit(:department, :name, :pronunciation, :phone_number)
   #end
 
 end
