@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20140617052617) do
 
   create_table "numbers", force: true do |t|
-    t.string   "busho"
+    t.string   "department"
     t.string   "name"
-    t.string   "yomi"
-    t.string   "tel"
+    t.string   "pronunciation"
+    t.string   "phone_number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
