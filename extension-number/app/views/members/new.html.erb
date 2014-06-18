@@ -1,18 +1,8 @@
 <h1>番号追加画面</h1>
 
-<form method="post" action="example.cgi">
 
-<p>部署<br>
-<textarea name="busho" cols="25" rows="1"></textarea></p>
-<p>名前<br>
-<textarea name="name" cols="25" rows="1"></textarea></p>
-<p>ふりがな<br>
-<textarea name="yomi" cols="25" rows="1"></textarea></p>
-<p>番号<br>
-<textarea name="tel" cols="25" rows="1"></textarea></p>
+<%= render 'form' %>
 
-<p><input type="submit" value="追加"></p>
-
-</form>
 
 <%= link_to '戻る', '/members' %>
+
