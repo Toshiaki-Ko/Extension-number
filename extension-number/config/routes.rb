@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-#  resources :members
+  resources :members
   get 'members/index'
 
   get 'members/show'
