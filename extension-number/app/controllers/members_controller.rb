@@ -7,8 +7,9 @@ class MembersController < ApplicationController
   def index
     @member = Member.all
   end
-
+# 内線番号情報の詳細を表示
   def show
+    @member = Member.find(params[:id])
   end
 
 # 新規作成フォームを表示
