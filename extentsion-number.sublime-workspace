@@ -15,6 +15,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "extension-number/db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 1086,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "extension-number/app/controllers/members_controller.rb",
+			"settings":
+			{
+				"buffer_size": 526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "extension-number/app/models/member.rb",
+			"settings":
+			{
+				"buffer_size": 38,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "extension-number/db/migrate/20140617052617_create_members.rb",
+			"settings":
+			{
+				"buffer_size": 289,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -43,9 +75,14 @@
 	},
 	"file_history":
 	[
+		"/Users/ko_toshiaki/Extension-number/extension-number/db/seeds.rb",
+		"/Users/ko_toshiaki/Extension-number/extension-number/app/views/members/_form.html.erb",
+		"/Users/ko_toshiaki/Extension-number/extension-number/db/development.sqlite3",
+		"/Users/ko_toshiaki/Extension-number/extension-number/app/models/member.rb",
+		"/Users/ko_toshiaki/Extension-number/extension-number/config.ru",
+		"/Users/ko_toshiaki/Extension-number/extension-number/bin/spring",
 		"/Users/ko_toshiaki/railswork/work3/test1/app/controllers/members_controller.rb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/app/controllers/members_controller.rb",
-		"/Users/ko_toshiaki/Extension-number/extension-number/app/views/members/_form.html.erb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/app/views/members/new.html.erb",
 		"/Users/ko_toshiaki/rails3book-121108 のコピー/chapter6a/db/migrate/20120126032154_create_members.rb",
 		"/Users/ko_toshiaki/rails3book-121108 のコピー/chapter6a/app/views/members/index.html.erb",
@@ -67,12 +104,10 @@
 		"/Users/ko_toshiaki/Extension-number/extension-number/app/views/members/new.html.haml",
 		"/Users/ko_toshiaki/Extension-number/extension-number/app/views/members/show.html.haml",
 		"/Users/ko_toshiaki/Extension-number/extension-number/app/views/members/home.html.haml",
-		"/Users/ko_toshiaki/Extension-number/extension-number/db/seeds.rb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/db/schema.rb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/db/s",
 		"/Users/ko_toshiaki/Extension-number/extension-number/app/models/number.rb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/db/test.sqlite3",
-		"/Users/ko_toshiaki/Extension-number/extension-number/db/development.sqlite3",
 		"/Users/ko_toshiaki/Extension-number/extension-number/db/seed.rb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/config/application.rb",
 		"/Users/ko_toshiaki/Extension-number/extension-number/config/database.yml",
@@ -167,10 +202,7 @@
 		"/Users/ko_toshiaki/railswork/work1/sample3/config/routes.rb",
 		"/Users/ko_toshiaki/railswork/work1/sample2/config/routes.rb",
 		"/Users/ko_toshiaki/railswork/work1/sample/public/post.html",
-		"/Users/ko_toshiaki/railswork/work1/sample/config/routes.rb",
-		"/Users/ko_toshiaki/railswork/work1/sample/app/controllers/travels_controller.rb",
-		"/Users/ko_toshiaki/railswork/work1/sample/app/controllers/plans_controller.rb",
-		"/Users/ko_toshiaki/railswork/work1/sample/app/controllers/movies_controller.rb"
+		"/Users/ko_toshiaki/railswork/work1/sample/config/routes.rb"
 	],
 	"find":
 	{
@@ -208,8 +240,123 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "extension-number/db/schema.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1086,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								960,
+								947
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "extension-number/app/controllers/members_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "extension-number/app/models/member.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "extension-number/db/migrate/20140617052617_create_members.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -263,6 +410,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"member",
+				"app/models/member.rb"
+			],
+			[
+				"mem",
+				"app/controllers/members_controller.rb"
+			],
+			[
+				"20",
+				"db/migrate/20140617052617_create_members.rb"
+			],
+			[
+				"_",
+				"app/views/members/_form.html.erb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			]
 		],
 		"width": 0.0
 	},
