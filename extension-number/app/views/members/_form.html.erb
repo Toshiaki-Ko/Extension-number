@@ -1,17 +1,18 @@
 <table class="attr">
 <tr>
 <th><%=form.label :name, "お名前" %></th>
+<td><%=form.text_field :name, size: 15 %></td>
 </tr>
 <tr>
 <th><%=form.label :pronunciation, "ふりがら" %></th>
+<td><%=form.text_field :pronunciation, size: 15 %></td>
 </tr>
 <tr>
 <th><%=form.label :phone_number, "内線番号" %></th>
+<td><%=form.text_field :phone_number, size: 15 %></td>
 </tr>
 <tr>
-<select department="部署">
-<option>人事部</option>
-   
- </select>
+<th><%=form.label :department, "部署" %></th>
+<td><%=form.text_field :department, size: 15 %></td>
  </tr>
  </table>
