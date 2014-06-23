@@ -14,8 +14,14 @@ class MembersController < ApplicationController
   def edit
   end
 
-
+# 内線番号の新規登録
   def create
+    @member = Member.new(params[:member])
+    if @member.save
+      redirect_to @member, notice: "内線番号を登録しました"
+    else
+      render "new"
+    end
   end
 
   def update
