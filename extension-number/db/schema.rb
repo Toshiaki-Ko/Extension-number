@@ -13,11 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20140617052617) do
 
-  create_table "numbers", force: true do |t|
-    t.string   "department"
-    t.string   "name"
-    t.string   "pronunciation"
-    t.string   "phone_number"
+  create_table "members", force: true do |t|
+    t.string   "department",    null: false
+    t.string   "name",          null: false
+    t.string   "pronunciation", null: false
+    t.string   "phone_number",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
