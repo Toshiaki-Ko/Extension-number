@@ -1,0 +1,21 @@
+- @page_title = "内線番号一覧表示"
+%h1= @page_title
+- if @members.present?
+  %table.list
+    %tr
+      %th 部署
+      %th お名前
+      %th ふりがな
+      %th 内線番号
+      %th 操作
+    - @members.each do |member|
+      %tr
+        %td= member.department
+        %td= member.name
+        %td= member.pronunciation
+        %td= member.phone_number
+        %td
+          = link_to "編集", [:edit, member]
+- else
+  %p 内線番号情報がありません。
+%p= link_to "番号の新規登録", :new_member
