@@ -1,4 +1,8 @@
 class MembersController < ApplicationController
+  def member_params
+    params.require(:member).permit(:name, :department, :phone_number, :pronunciation)
+  end
+
 # 番号一覧
   def index
     @member = Member.all
@@ -17,7 +21,7 @@ class MembersController < ApplicationController
 
 # 内線番号の新規登録
   def create
-    @member = Member.new(params[:member])
+    @member = Member.new(member_params)
     if @member.save
       redirect_to @member, notice: "内線番号を登録しました"
     else
