@@ -1,6 +1,7 @@
 class MembersController < ApplicationController
- 
+# 番号一覧
   def index
+    @member = Member.all
   end
 
   def show
