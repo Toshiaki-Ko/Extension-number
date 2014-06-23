@@ -1,14 +1,17 @@
-<form method="" action="">
- <p>
- 氏名：<input type="text" name="" /><br>
- ふりがな：<input type="text" pronunciation="" /><br>
- 内線番号：<input type="text" phone_number="" /><br>
- 部署：
- <select department="部署">
-   <option>人事部</option>
+<table class="attr">
+<tr>
+<th><%=form.label :name, "お名前" %></th>
+</tr>
+<tr>
+<th><%=form.label :pronunciation, "ふりがら" %></th>
+</tr>
+<tr>
+<th><%=form.label :phone_number, "内線番号" %></th>
+</tr>
+<tr>
+<select department="部署">
+<option>人事部</option>
    
- </select><br>
- <input type="submit" value="送信" />　
- <input type="reset" value="クリア" />
- </p>
-</form>
+ </select>
+ </tr>
+ </table>
