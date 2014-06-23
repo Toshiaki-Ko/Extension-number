@@ -7,8 +7,9 @@ class MembersController < ApplicationController
   def show
   end
 
-
+# 新規作成フォームを表示
   def new
+    @member = Member.new
   end
 
   def edit
