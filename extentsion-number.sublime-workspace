@@ -27,7 +27,7 @@
 			"file": "extension-number/app/controllers/members_controller.rb",
 			"settings":
 			{
-				"buffer_size": 526,
+				"buffer_size": 579,
 				"line_ending": "Unix"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "extension-number/db/migrate/20140617052617_create_members.rb",
 			"settings":
 			{
-				"buffer_size": 289,
+				"buffer_size": 300,
 				"line_ending": "Unix"
 			}
 		}
@@ -277,15 +277,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 526,
+						"buffer_size": 579,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								480,
-								480
+								0,
+								0
 							]
 						],
 						"settings":
@@ -335,15 +335,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 289,
+						"buffer_size": 300,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								248,
-								248
+								0,
+								0
 							]
 						],
 						"settings":
