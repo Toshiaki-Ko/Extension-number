@@ -3,4 +3,4 @@
 = form_for @member do |form|
   = render "form", form: form
   %p= form.submit value="新規登録"
-  %input{onclick: "location.href='/members'", type: "button", value: "戻る"}/
+  = link_to '戻る', '/members'
