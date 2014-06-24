@@ -3,18 +3,18 @@
 - if @members.present?
   %table.list
     %tr
-      %th 部署
-      %th お名前
-      %th ふりがな
-      %th 内線番号
-      %th 操作
+      %th{width: "100"} 部署
+      %th{width: "100"} お名前
+      %th{width: "100"} ふりがな
+      %th{width: "100"} 内線番号
+      %th{width: "100"} 操作
     - @members.each do |member|
       %tr
-        %td= member.department
-        %td= member.name
-        %td= member.pronunciation
-        %td= member.phone_number
-        %td
+        %td{width: "100", valign: "middle", align: "center"}= member.department
+        %td{width: "100", valign: "middle", align: "center"}= member.name
+        %td{width: "100", valign: "middle", align: "center"}= member.pronunciation
+        %td{width: "100", valign: "middle", align: "center"}= member.phone_number
+        %td{width: "100", valign: "middle", align: "center"}
           = link_to "編集", [:edit, member]
 - else
   %p 内線番号情報がありません。
