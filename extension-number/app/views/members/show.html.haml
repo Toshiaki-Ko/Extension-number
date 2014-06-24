@@ -1,8 +1,6 @@
 - @page_title = "登録内容の詳細"
 %h1= @page_title
 
-%p= link_to "編集", [:edit, @member]
-
 %table.attr
   %tr
     %th 部署
@@ -16,3 +14,6 @@
   %tr
     %th 内線番号
     %td= @member.phone_number
+%p= link_to "編集", [:edit, @member]
+
+%p= link_to "一覧に戻る", '/members'
