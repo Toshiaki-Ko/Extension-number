@@ -1,5 +1,8 @@
 %table.attr
   %tr
+    %th= form.label :department, "部署"
+    %td= form.text_field :department, size: 15
+  %tr
     %th= form.label :name, "お名前"
     %td= form.text_field :name, size: 15
   %tr
@@ -8,6 +11,4 @@
   %tr
     %th= form.label :phone_number, "内線番号"
     %td= form.text_field :phone_number, size: 15
-  %tr
-    %th= form.label :department, "部署"
-    %td= form.text_field :department, size: 15
+  
