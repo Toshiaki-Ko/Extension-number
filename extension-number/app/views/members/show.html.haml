@@ -1,0 +1,18 @@
+- @page_title = "登録内容の詳細"
+%h1= @page_title
+
+%p= link_to "編集", [:edit, @member]
+
+%table.attr
+  %tr
+    %th 部署
+    %td= @member.department
+  %tr
+    %th お名前
+    %td= @member.name
+  %tr
+    %th ふりがな
+    %td= @member.pronunciation
+  %tr
+    %th 内線番号
+    %td= @member.phone_number
