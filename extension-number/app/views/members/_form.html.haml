@@ -1,23 +1,13 @@
-<%= form_for(@member) do |f| %>
- 
-  <div class="field">
-    <%= f.label :部署 %><br>
-    <%= f.text_field :busho %>
-  </div>
-  <div class="field">
-    <%= f.label :名前 %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :読み方 %><br>
-    <%= f.text_field :yomikata %>
-  </div>
-  <div class="field">
-    <%= f.label :番号 %><br>
-    <%= f.number_field :number %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
-<% end %>
+%table.attr
+  %tr
+    %th= form.label :department, "部署"
+    %td= form.text_field :department, size: 15
+  %tr
+    %th= form.label :name, "お名前"
+    %td= form.text_field :name, size: 15
+  %tr
+    %th= form.label :pronunciation, "ふりがな"
+    %td= form.text_field :pronunciation, size: 15
+  %tr
+    %th= form.label :phone_number, "内線番号"
+    %td= form.text_field :phone_number, size: 15
