@@ -3,8 +3,10 @@ class MembersController < ApplicationController
   def member_params
     params.require(:member).permit(:name, :department,:phone_number,:pronunciation)
   end
-  
+
+  #内線番号一覧
   def index
+    @member = Member.all
   end
 
 # Numberモデルにある全てのデータを表示
