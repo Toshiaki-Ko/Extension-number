@@ -7,4 +7,6 @@ validates :phone_number, presence: true,
 validates :pronunciation, presence: true,
   :format => { :with => /\A[\p{hiragana}ー－]+\z/ },
   uniqueness: false
+
+validates :name, presence: true, uniqueness: false
 end
