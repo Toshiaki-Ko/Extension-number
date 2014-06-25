@@ -1,6 +1,9 @@
 class MembersController < ApplicationController
   #before_action :set_member, only: [:show, :edit, :update, :destroy]
-
+  def member_params
+    params.require(:member).permit(:name, :department,:phone_number,:pronunciation)
+  end
+  
   def index
   end
 
