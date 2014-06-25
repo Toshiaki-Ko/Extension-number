@@ -1,7 +1,8 @@
 %table.attr
   %tr
+    - options = ["akb", "ske", "nmb"]
     %th= form.label :department, "部署"
-    %td= form.text_field :department, size: 15
+    %td= form.select :department, options
   %tr
     %th= form.label :name, "お名前"
     %td= form.text_field :name, size: 15
