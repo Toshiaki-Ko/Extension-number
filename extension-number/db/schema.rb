@@ -14,17 +14,10 @@
 ActiveRecord::Schema.define(version: 20140617052617) do
 
   create_table "members", force: true do |t|
-<<<<<<< HEAD
-    t.string   "department"
-    t.string   "name"
-    t.string   "pronunciation"
-    t.string   "phone_number"
-=======
     t.string   "department",    null: false
     t.string   "name",          null: false
     t.string   "pronunciation", null: false
     t.integer  "phone_number",  null: false
->>>>>>> 716763f... phone_numberをstring型からinteger型に変更
     t.datetime "created_at"
     t.datetime "updated_at"
   end
