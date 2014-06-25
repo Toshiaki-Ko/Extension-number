@@ -1,4 +1,5 @@
 %table.attr
+  = render "errors", obj: @member
   %tr
     - options = ["akb", "ske", "nmb"]
     %th= form.label :department, "部署"
