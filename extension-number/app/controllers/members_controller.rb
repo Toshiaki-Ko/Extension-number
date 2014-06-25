@@ -6,7 +6,7 @@ class MembersController < ApplicationController
 
   #内線番号一覧
   def index
-    @member = Member.all
+    @members = Member.all
   end
 
 # Numberモデルにある全てのデータを表示
