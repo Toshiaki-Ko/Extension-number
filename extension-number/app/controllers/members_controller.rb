@@ -16,7 +16,7 @@ class MembersController < ApplicationController
 
 # Numberモデルにデータを追加
   def new
-    @member = Number.new
+    @member = Member.new
   end
 
   def edit
