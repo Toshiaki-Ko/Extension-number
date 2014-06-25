@@ -1,2 +1,2 @@
-class Number < ActiveRecord::Base
+class Member < ActiveRecord::Base
 end
