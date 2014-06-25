@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20140617052617) do
 
-  create_table "numbers", force: true do |t|
+  create_table "members", force: true do |t|
     t.string   "department"
     t.string   "name"
     t.string   "pronunciation"
