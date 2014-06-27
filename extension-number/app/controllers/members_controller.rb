@@ -15,6 +15,7 @@ class MembersController < ApplicationController
   end
 
   def edit
+    @member = Member.find(params[:id])
   end
 
 # newをした後にcreateでデータベースに格納する
