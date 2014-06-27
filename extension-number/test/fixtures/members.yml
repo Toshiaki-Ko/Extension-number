@@ -15,10 +15,9 @@ two:
   pronunciation: "たなか"
   phone_number: 1234
 
-##ふりがなについて(空欄不可・ふりがなのみ)
 ###可
 three:
   department: akb
   name: "田中"
   pronunciation: "たなか"
-  phone_number: 12345
+  phone_number: 9999
