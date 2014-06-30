@@ -24,6 +24,13 @@ class MembersController < ApplicationController
   end
 
   def update
+       @member = Member.find(params[:id])
+    @member.assign_attributes(member_params)
+    if @member.save
+    redirect_to @member, notice: "会員情報更新した"
+    else
+    render "edit"
+    end
   end
 
   def destroy
