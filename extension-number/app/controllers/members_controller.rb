@@ -1,4 +1,14 @@
 class MembersController < ApplicationController
+<<<<<<< HEAD
+  #before_action :set_member, only: [:show, :edit, :update, :destroy]
+  def member_params
+    params.require(:member).permit(:name, :department,:phone_number,:pronunciation)
+  end
+
+  #内線番号一覧
+  def index
+    @members = Member.all
+=======
   def member_params
     params.require(:member).permit(:name, :department, :phone_number, :pronunciation)
   end
@@ -6,6 +16,7 @@ class MembersController < ApplicationController
 # 番号一覧
   def index
     @member = Member.all
+>>>>>>> master
   end
 # 内線番号情報の詳細を表示
   def show
@@ -35,5 +46,9 @@ class MembersController < ApplicationController
 
   def destroy
   end
+<<<<<<< HEAD
+ 
+=======
 
+>>>>>>> master
 end
