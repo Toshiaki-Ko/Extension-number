@@ -1,0 +1,19 @@
+one:
+  department: akb
+  name: "田中"
+  pronunciation: "たなか"
+  phone_number: 1234
+###可
+two:
+  department: akb
+  name: "abc"
+  pronunciation: "たなか"
+  phone_number: 1234
+
+
+###可
+three:
+  department: akb
+  name: "田中"
+  pronunciation: "たなか"
+  phone_number: 1234

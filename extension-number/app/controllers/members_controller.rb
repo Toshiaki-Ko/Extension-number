@@ -1,25 +1,33 @@
 class MembersController < ApplicationController
-  #before_action :set_member, only: [:show, :edit, :update, :destroy]
+  def member_params
+    params.require(:member).permit(:name, :department, :phone_number, :pronunciation)
+  end
 
+# 番号一覧
   def index
+    @member = Member.all
   end
-
-# Numberモデルにある全てのデータを表示
+# 内線番号情報の詳細を表示
   def show
-    @members = Number.find(:all)
+    @member = Member.find(params[:id])
   end
 
-# Numberモデルにデータを追加
+# 新規作成フォームを表示
   def new
-    @member = Number.new
+    @member = Member.new
   end
 
   def edit
   end
 
-# newをした後にcreateでデータベースに格納する
+# 内線番号の新規登録
   def create
-    @member = Number.new(member_params)
+    @member = Member.new(member_params)
+    if @member.save
+      redirect_to @member, notice: "内線番号を登録しました"
+    else
+      render "new"
+    end
   end
 
   def update
@@ -27,15 +35,5 @@ class MembersController < ApplicationController
 
   def destroy
   end
-  
-  #重複したところをまとめ
-  #def set_member
-  #  @member = Member.find(params[:id])
-  #end
-
-　#URLから送られてきた値とフォームで入力した値をここに取得
-  #def member_params
-  #  params.require(:member).permit(:department, :name, :pronunciation, :phone_number)
-  #end
 
 end
