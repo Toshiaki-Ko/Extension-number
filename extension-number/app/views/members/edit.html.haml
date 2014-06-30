@@ -1,0 +1,6 @@
+- @page_title = "内線番号情報更新"
+%h1= @page_title
+= form_for @member do |form|
+  = render "form", form: form
+  %p= form.submit value="更新"
+  = link_to '戻る', '/members'
