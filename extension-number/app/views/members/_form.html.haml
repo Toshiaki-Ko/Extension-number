@@ -1,0 +1,16 @@
+= render "errors", obj: @member
+%table.attr
+  %tr
+    - options = ["akb", "ske", "nmb"]
+    %th= form.label :department
+    %td= form.select :department, options
+  %tr
+    %th= form.label :name
+    %td= form.text_field :name, size: 15
+  %tr
+    %th= form.label :pronunciation
+    %td= form.text_field :pronunciation, size: 15
+  %tr
+    %th= form.label :phone_number
+    %td= form.text_field :phone_number, size: 15
+  

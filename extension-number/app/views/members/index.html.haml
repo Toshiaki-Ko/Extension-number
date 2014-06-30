@@ -1,0 +1,21 @@
+- @page_title = "内線番号一覧表示"
+%h1= @page_title
+- if @members.present?
+  %table.list
+    %tr
+      %th{width: "150"} 部署
+      %th{width: "150"} お名前
+      %th{width: "150"} ふりがな
+      %th{width: "150"} 内線番号
+      %th{width: "150"} 操作
+    - @members.each do |member|
+      %tr
+        %td{width: "150", valign: "middle", align: "center"}= member.department
+        %td{width: "150", valign: "middle", align: "center"}= member.name
+        %td{width: "150", valign: "middle", align: "center"}= member.pronunciation
+        %td{width: "150", valign: "middle", align: "center"}= member.phone_number
+        %td{width: "150", valign: "middle", align: "center"}
+          = link_to "編集", [:edit, member]
+- else
+  %p 内線番号情報がありません。
+%p= link_to "番号の新規登録", :new_member
