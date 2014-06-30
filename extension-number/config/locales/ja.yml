@@ -14,10 +14,10 @@ ja:
       messages:
         blank: を入力してください。
         empty: を入力してください。
-        greater_than: 4桁にしてください。
-        greater_than_or_equal_to: 4桁にしてください。
+        greater_than: 4桁の1から始まる数字にしてください。
+        greater_than_or_equal_to: 4桁の1から始まる数字にしてください。
         invalid: は不正な値です。
-        less_than: 4桁にしてください。
-        less_than_or_equal_to: 4桁にしてください。
+        less_than: 4桁の1から始まる数字にしてください。
+        less_than_or_equal_to: 4桁の1から始まる数字にしてください。
         not_a_number: は数値で入力してください。
         record_invalid: バリデーションに失敗しました。 %{errors}
