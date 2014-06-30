@@ -1,19 +1,19 @@
 Rails.application.routes.draw do
   resources :members
-  #余ったソースを消す
-  #get 'members/index'
+  
+#  get 'members/index'
 
-  #get 'members/show'
+#  get 'members/show'
 
-  #get 'members/new'
+#  get 'members/new'
 
-  #get 'members/edit'
+#  get 'members/edit'
 
-  #get 'members/create'
+#  get 'members/create'
 
-  #get 'members/update'
+#  get 'members/update'
 
-  #get 'members/destroy'
+#  get 'members/destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

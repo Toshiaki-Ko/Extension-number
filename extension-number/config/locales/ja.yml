@@ -1,0 +1,23 @@
+ja:
+  activerecord:
+    models:
+      member: 会員情報
+    attributes:
+      member:
+        phone_number: 内線番号
+        name: 氏名
+        department: 部署
+        pronunciation: ふりがな
+        
+    errors:
+      format: ! '%{attribute}%{message}'
+      messages:
+        blank: を入力してください。
+        empty: を入力してください。
+        greater_than: 4桁にしてください。
+        greater_than_or_equal_to: 4桁にしてください。
+        invalid: は不正な値です。
+        less_than: 4桁にしてください。
+        less_than_or_equal_to: 4桁にしてください。
+        not_a_number: は数値で入力してください。
+        record_invalid: バリデーションに失敗しました。 %{errors}

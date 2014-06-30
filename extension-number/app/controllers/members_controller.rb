@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+<<<<<<< HEAD
   #before_action :set_member, only: [:show, :edit, :update, :destroy]
   def member_params
     params.require(:member).permit(:name, :department,:phone_number,:pronunciation)
@@ -7,14 +8,22 @@ class MembersController < ApplicationController
   #内線番号一覧
   def index
     @members = Member.all
+=======
+  def member_params
+    params.require(:member).permit(:name, :department, :phone_number, :pronunciation)
   end
 
-# Numberモデルにある全てのデータを表示
+# 番号一覧
+  def index
+    @member = Member.all
+>>>>>>> master
+  end
+# 内線番号情報の詳細を表示
   def show
-    @members = Number.find(:all)
+    @member = Member.find(params[:id])
   end
 
-# Numberモデルにデータを追加
+# 新規作成フォームを表示
   def new
     @member = Member.new
   end
@@ -22,9 +31,14 @@ class MembersController < ApplicationController
   def edit
   end
 
-# newをした後にcreateでデータベースに格納する
+# 内線番号の新規登録
   def create
-    @member = Number.new(member_params)
+    @member = Member.new(member_params)
+    if @member.save
+      redirect_to @member, notice: "内線番号を登録しました"
+    else
+      render "new"
+    end
   end
 
   def update
@@ -32,5 +46,9 @@ class MembersController < ApplicationController
 
   def destroy
   end
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> master
 end
