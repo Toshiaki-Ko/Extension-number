@@ -16,7 +16,7 @@
         %td{width: "150", valign: "middle", align: "center"}= member.phone_number
         %td{width: "150", valign: "middle", align: "center"}
           = link_to "編集", [:edit, member] |
-          = link_to "削除", member, method: :delete, confirm: "本当に削除ですか"
+          = link_to "削除", member, method: :delete, data: { confirm: "本当に削除ですか" }
 - else
   %p 内線番号情報がありません。
 %p= link_to "番号の新規登録", :new_member
