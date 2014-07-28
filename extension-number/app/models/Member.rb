@@ -10,7 +10,7 @@ validates :phone_number, presence: true,
     greater_than: 999, less_than: 10000, allow_blank: true },
   uniqueness: false
 
-	def self.search(search)
+  def self.search(search)
     if search # Controllerから渡されたパラメータが!= nilの場合は、titleカラムを部分一致検索
       Member.where(["pronunciation LIKE ?", "%#{search}%"])
     else
