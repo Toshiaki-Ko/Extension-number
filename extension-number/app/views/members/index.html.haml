@@ -1,5 +1,11 @@
 - @page_title = "内線番号一覧表示"
 %h1= @page_title
+= form_tag members_path, :method => 'get' do
+  %p
+    = text_field_tag :search, params[:search]
+    = submit_tag "検索", :pronunciation => nil
+%p= button_to "内線番号の新規登録", :new_member
+
 - if @members.present?
   %table.list
     %tr
@@ -19,4 +25,4 @@
           = link_to "削除", member, method: :delete, data: { confirm: "本当に削除ですか" }
 - else
   %p 内線番号情報がありません。
-%p= link_to "番号の新規登録", :new_member
+= link_to '戻る', '/members'
