@@ -4,7 +4,7 @@
   %p
     = text_field_tag :search, params[:search]
     = submit_tag "検索", :pronunciation => nil
-%p= link_to "番号の新規登録", :new_member
+%p= button_to "内線番号の新規登録", :new_member
 
 - if @members.present?
   %table.list
