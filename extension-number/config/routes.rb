@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   resources :members
   
-#  get 'members/index'
+# 'members/index'
 
 #  get 'members/show'
 
-#  get 'members/new'
+  post 'members/new'
 
 #  get 'members/edit'
 
