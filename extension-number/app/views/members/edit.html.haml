@@ -2,5 +2,5 @@
 %h1= @page_title
 = form_for @member do |form|
   = render "form", form: form
-  %p= form.submit value="更新"
+  %p= form.submit value="更新", data: { confirm: "本当に更新ですか?" }
   = link_to '戻る', '/members'
